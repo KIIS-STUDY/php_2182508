@@ -8,10 +8,12 @@
 <body>
   <?php
 
-  try 
+
+
+try 
   {
 
-    $staff_code = $_POST['staffcode'];
+    $staff_code = $_GET['staffcode'];
 
     $dsn = 'mysql:dbname=shop;host=localhost;charset=utf8';
     $user = 'root';
