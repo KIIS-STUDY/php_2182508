@@ -1,11 +1,11 @@
 <?php
 
-session_start ();
+session_start();
 session_regenerate_id(true);
 
-require_once ('../common/common.php');
+require_once('../common/common.php');
 
-$post = sanitize($_POST);
+$post=sanitize($_POST);
 
 $max=$post['max'];
 
@@ -42,4 +42,5 @@ $_SESSION['cart']=$cart;
 $_SESSION['kazu']=$kazu;
 
 header('Location:shop_cartlook.php');
+exit();
 ?>
